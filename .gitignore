@@ -3,5 +3,8 @@
 .npmrc
 node_modules
 
+images
+logs
+
 # Private Configurations
 config.yaml
