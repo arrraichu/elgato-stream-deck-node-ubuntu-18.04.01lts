@@ -1,0 +1,35 @@
+---
+name: Stream Deck Button Configuration
+debug: true
+reload: true
+log_directory: logs/
+image_directory: images/
+buttons:
+  - index: 0
+    name: Mute Volume
+    image_source: volume_logo_mute.png
+    type: keyboard
+    keyboard_press_type: tap
+    keyboard_keys: audio_mute
+
+  - index: 5
+    name: Volume Up
+    image_source: volume_logo_up.png
+    type: keyboard
+    keyboard_press_type: tap
+    keyboard_keys: audio_vol_up
+
+  - index: 10
+    name: Volume Down
+    image_source: volume_logo_down.png
+    type: keyboard
+    keyboard_press_type: tap
+    keyboard_keys: audio_vol_down
+
+  - index: 6
+    name: GitHub
+    image_source: github_logo.png
+    type: keyboard
+    keyboard_press_type: sequential
+    keyboard_keys: https://github.com/arrraichu/elgato-stream-deck-node-ubuntu-18.04.01lts
+    keyboard_delay: 1

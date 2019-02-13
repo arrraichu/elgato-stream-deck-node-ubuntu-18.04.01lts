@@ -1,0 +1,7 @@
+.git
+.DS_Store
+.npmrc
+node_modules
+
+# Private Configurations
+config.yaml
