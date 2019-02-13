@@ -26,7 +26,7 @@ Reading the device on Linux requires root privileges out-of-the-box, so running 
 
 Before running the framework, you must create a `config.yaml` file. A sample configuration file is provided for you in `config.sample.yaml`.
 
-You can specify when a button press will do by using the `keyboard_press_type` key inside of the button object. Here are the possible button types:
+You can specify when a button press will do by using the `type` key inside of the button object. Here are the possible button types:
 
 #### [default](#default)
 
