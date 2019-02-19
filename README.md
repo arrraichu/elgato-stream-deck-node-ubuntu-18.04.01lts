@@ -1,6 +1,6 @@
-# Elgato Stream Deck NodeJS Framework for Ubuntu 18.04.01 LTS
+# Elgato Stream Deck NodeJS Framework for Ubuntu 18.XX LTS
 
-This is a framework for running the [Elgato Stream Deck](https://www.elgato.com/en/gaming/stream-deck) on Ubuntu 18.04.01 LTS.
+This is a framework for running the [Elgato Stream Deck](https://www.elgato.com/en/gaming/stream-deck) on Ubuntu 18.XXLTS.
 
 If you are looking for a more generic framework for running the Elgato Stream Deck on Linux, please refer to the [elgato-stream-deck](https://github.com/Lange/node-elgato-stream-deck) repository.
 
@@ -94,7 +94,19 @@ button:
 
 #### [api](#api)
 
-API is not currently supported. Sorry, come back soon for updates! 
+Makes an API call to a specified URL. The body in the `api` key use the npm [request](https://www.npmjs.com/package/request) package and follows the same format. `api_console` is a boolean where you can turn on whether the response body gets printed onto the console.
+
+```YAML
+button:
+  - name: Get Time
+    index: 0
+    image_source: image.png
+    type: api
+    api:
+      method: get
+      uri: http://worldclockapi.com/api/json/utc/now
+    api_console: true
+```
 
 ## API
 See [API docs](API.md).

@@ -1,5 +1,6 @@
 // INIT AND RUNS
 const init = require('./init');
+const runApi = require('./runs/api');
 const runDefault = require('./runs/default');
 const runKeyboard = require('./runs/keyboard');
 const runShell = require('./runs/shell');
@@ -34,6 +35,9 @@ function onKeyDown(index) {
 
 	if (type) {
 		switch (type) {
+			case 'api':
+				runApi(config, index, states, deck);
+				break;
 			case 'shell':
 				runShell(config, index, states, deck);
 				break;
