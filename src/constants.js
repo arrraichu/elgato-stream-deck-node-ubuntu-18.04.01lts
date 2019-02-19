@@ -2,6 +2,11 @@ module.exports = {
 	DEFAULT_KEYBOARD_DELAY_MS : 500,
 
 	ERROR_CANNOT_OPEN_FILE : 'Cannot open file: %s',
+
+	API_ALLOWED_FIELDS : ['uri', 'method', 'headers', 'form', 'formData'],
+	API_REQUIRED_FIELDS : ['uri'],
+	ERROR_API_MISSING_REQUIRED_FIELD : 'Missing required key in api: %s',
+
 	ERROR_BUTTON_WITH_INDEX_NOT_FOUND : 'Button with index %d not found.',
 
 	ERROR_ROBOT_SIMULTANEOUS_TYPE : 'Keys must be either a non-modifier string or an array of modifiers and keys.',
