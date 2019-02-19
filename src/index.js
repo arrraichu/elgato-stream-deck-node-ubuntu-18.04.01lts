@@ -4,6 +4,7 @@ const runApi = require('./runs/api');
 const runDefault = require('./runs/default');
 const runKeyboard = require('./runs/keyboard');
 const runShell = require('./runs/shell');
+const runSystem = require('./runs/system');
 
 const { config, deck, states } = init();
 const { debug, log_directory, image_directory } = config;
@@ -43,6 +44,9 @@ function onKeyDown(index) {
 				break;
 			case 'keyboard':
 				runKeyboard(config, index, states, deck);
+				break;
+			case 'system':
+				runSystem(config, index, states, deck);
 				break;
 			case 'default':
 				runDefault(config, index, states, deck);
